@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 120px;
+  height: 150vw;
+  padding: 0 1.7rem;
+  color: aliceblue;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: rgb(202, 214, 226);
+}
+
+.sidebar:hover {
+  width: 240px;
+  transition: 0.5s;
+}
+
+.logo {
+  height: 80px;
+  padding: 16px;
+}
+.menu {
+  height: 88px;
+  position: relative;
+
+  padding: 0;
+}
+.menu li {
+  padding: 1.2rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.menu a {
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: 150;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a span {
+  overflow: hidden;
+}
+
+.menu a i {
+  font-size: 1.2rem;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
